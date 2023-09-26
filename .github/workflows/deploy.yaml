@@ -35,7 +35,7 @@ jobs:
       - name: Build app
         run: |
           go mod download
-          go build -o url-shorter ./cmd/url-shorter
+          go build -o url-shorter ./cmd/url_shorter
       - name: Deploy to VM
         run: |
           sudo apt-get install -y ssh rsync
